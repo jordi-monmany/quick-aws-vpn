@@ -31,7 +31,7 @@ SCRIPT_REQUIRED=("aws" "openssl" "jq" "uuidgen" "readlink" "date" "sudo")
 readonly SCRIPT_CREATED
 SCRIPT_DESCRIPTION="Script for quickly creating, installing and managing AWS VPNs with a NAT gateway to the public Internet without requiring EC2 instances"
 readonly SCRIPT_DESCRIPTION
-SCRIPT_WARNING="This program is provided AS IS with ABSOLUTELY NO WARRANTY. No license rights are granted, and distribution is strictly prohibited. Execution of this program is not authorized without prior written consent from the author. This program is an Alpha Version. It is incomplete, may contain bugs and may cause significant financial losses if used without proper supervision specially on the creation and termination of AWS resources. To obtain the necessary license rights, including authorization to execute the program, or for further information, please contact the author."
+SCRIPT_WARNING="This program is provided AS IS with ABSOLUTELY NO WARRANTY. No license rights are granted, and distribution is strictly prohibited. Execution of this program is not authorized without prior written consent from the author. This program is an Alpha Version. It is incomplete, may contain bugs and may cause significant financial losses if used without proper supervision, particularly during the creation and termination of AWS resources. To obtain the necessary license rights, including authorization to execute the program, or for further information, please contact the author."
 readonly SCRIPT_WARNING
 MAX_VERBOSITY=3
 readonly MAX_VERBOSITY
