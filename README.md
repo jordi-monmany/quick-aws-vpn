@@ -41,7 +41,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
    Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/quick-aws-vpn.git
+   git clone https://github.com/jordi-monmany/quick-aws-vpn.git
    ```
 
 2. **Navigate to the Directory**
