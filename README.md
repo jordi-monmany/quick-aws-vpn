@@ -74,9 +74,9 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 | `-v` | Increment verbosity level; one level for each -v present in the arguments; can be used up to three times (`-vvv`). |
 | `-q` | Suppress non-essential output. |
 | `-f` | Skip all safety confirmation checks and automatically answer yes to all questions. |
-| `-d VALUE` | Specify working directory (default: current directory). |
-| `-p VALUE` | Specify PKI directory where sensitive cryptographic authentication files (`root-ca.pem`, `vpn-server.key`, `vpn-server.crt`, `vpn-client.key`, and `vpn-client.crt`) will be picked from or automatically created if missing (default: `<working directory>/pki`). |
-| `-r VALUE` | Specify AWS region. |
+| <span>`-d VALUE`</span> | Specify working directory (default: current directory). |
+| <span>`-p VALUE`</span> | Specify PKI directory where sensitive cryptographic authentication files (`root-ca.pem`, `vpn-server.key`, `vpn-server.crt`, `vpn-client.key`, and `vpn-client.crt`) will be picked from or automatically created if missing (default: `<working directory>/pki`). |
+| <span>`-r VALUE`</span> | Specify AWS region. |
 
 ### Actions
 
