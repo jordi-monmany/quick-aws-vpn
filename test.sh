@@ -1,6 +1,8 @@
 #!/bin/bash
 
-### Created by Jordi Monmany Badia ( jordi-monmany ) on 2024-11-25
+# Copyright (c) Jordi Monmany Badia
+# All rights reserved. This software is proprietary and confidential.
+# It may not be used, modified, or distributed without the express written consent of Jordi Monmany Badia.
 
 set -euo pipefail
 
@@ -11,15 +13,14 @@ COLOR_GREEN='\033[0;32m'
 COLOR_YELLOW='\033[0;33m'
 
 if ! [ -t 1 ]; then
-COLOR_OFF=""
-COLOR_RED=""
-COLOR_GREEN=""
-COLOR_YELLOW=""
+    COLOR_OFF=""
+    COLOR_RED=""
+    COLOR_GREEN=""
+    COLOR_YELLOW=""
 fi
 
 io_print_pass() { printf "${COLOR_GREEN}"'[PASS] %b'"${COLOR_OFF}"'\n' "$*"; }
 io_print_fail() { printf "${COLOR_RED}"'[FAIL] %b'"${COLOR_OFF}"'\n' "$*"; }
-
 
 play_alert_sound() {
     pactl upload-sample /usr/share/sounds/freedesktop/stereo/complete.oga test-alert && pactl play-sample test-alert
@@ -157,15 +158,6 @@ cleanup_after_error() {
     echo "Cleanup after error completed"
 }
 
-# comprehensive_test "" "-q" "-f"
-# cleanup_after_error "" "-q" "-f"
-# comprehensive_test "-r eu-west-3" "-q" ""
-# comprehensive_test "-r eu-west-3" "" ""
-# comprehensive_test "-r eu-west-3" "-v" "-f"
-comprehensive_test "-r eu-west-3" "" "-f"
-# comprehensive_test "-r eu-west-3" "-q" "-f"
-# cleanup_after_error "-r eu-west-3" "-q" "-f"
-# cleanup_after_error "-r eu-west-3" "" "-f"
 
-# source ./quick-aws-vpn.sh -v -d ./test/customdir terminate
-# source ./quick-aws-vpn.sh -r eu-west-3 -d ./test/customdir create
+comprehensive_test "" "" "-f" 
+#cleanup_after_error "" "" "-f" # Run in case a test exits with an error code

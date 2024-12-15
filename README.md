@@ -93,6 +93,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 | `remote-resources` | List remote search results for the main AWS resources associated with the persisted VPN. |
 | `region-remote-resources` | List remote search results for the main AWS resources created by this program in the selected region. |
 | `trace-region-remote-resources` | List remote search results for the main AWS resources created by this program in the selected region with their tagging information. |
+
 ### Examples
 
 - **Create a New VPN**
