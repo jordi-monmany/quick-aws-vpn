@@ -1,6 +1,7 @@
 markdown: kramdown
 kramdown:
   input: GFM        # Enable GitHub Flavored Markdown features
+  title: "Test Title for Config Check"
   #theme: jekyll-theme-cayman
   theme: minima
   highlighter: rouge
