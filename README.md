@@ -68,7 +68,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 ### Options
 
-| <pre><nobr>Option Syntax</nobr></pre> | Description |
+| <pre>Option Syntax</pre> | Description |
 |---------------------------------------|-------------|
 | `-h` | Show help message. |
 | `-v` | Increment verbosity level; one level for each -v present in the arguments; can be used up to three times (`-vvv`). |
@@ -80,7 +80,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 ### Actions
 
-| <pre><nobr>Action Syntax</nobr></pre> | Description |
+| <pre>Action Syntax</pre> | Description |
 |---------------------------------------|-------------|
 | `create` | Create a new AWS VPN, including all necessary remote resources (VPCs, subnets, gateways, PKI files). |
 | `install` | Install OpenVPN configuration and authentication files for the current VPN to `/etc/openvpn/client/`. |
