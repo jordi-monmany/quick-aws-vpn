@@ -1,0 +1,5 @@
+markdown: kramdown
+kramdown:
+  input: GFM        # Enable GitHub Flavored Markdown features
+  hard_wrap: false  # (Optional) Don't force hard line breaks
+  parse_block_html: true  # Allow block-level HTML, including <pre>
