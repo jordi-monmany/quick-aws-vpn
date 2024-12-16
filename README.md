@@ -1,6 +1,6 @@
 # Quick AWS VPN
 
-A Bash script for automated deployment and management of **AWS** Client VPN endpoints with an integrated NAT gateway to the public Internet. Quick AWS VPN streamlines the process of setting up VPN connections to AWS environments without the need to launch any EC2 instances.
+A Bash script for automated deployment and management of AWS Client VPN endpoints with an integrated NAT gateway to the public Internet. Quick AWS VPN streamlines the process of setting up VPN connections to AWS environments without the need to launch any EC2 instances.
 
 ## Description
 
