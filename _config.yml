@@ -1,6 +1,6 @@
 markdown: kramdown
 kramdown:
-  input: GFM        # Enable GitHub Flavored Markdown features
+  #input: GFM        # Enable GitHub Flavored Markdown features
   parse_block_html: true
   parse_span_html: true
   hard_wrap: false  # (Optional) Don't force hard line breaks
