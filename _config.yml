@@ -1,4 +1,0 @@
-markdown: kramdown
-kramdown:
-  title: "Test Title for Config Check"
-  theme: jekyll-theme-cayman
