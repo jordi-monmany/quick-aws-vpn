@@ -1,12 +1,12 @@
 markdown: kramdown
 kramdown:
-  input: GFM        # Enable GitHub Flavored Markdown features
+  #input: GFM
   title: "Test Title for Config Check"
-  theme: jekyll-theme-cayman
+  #theme: jekyll-theme-cayman
   #theme: minima
-  highlighter: rouge
-  parse_block_html: true
-  parse_span_html: true
-  hard_wrap: false  # (Optional) Don't force hard line breaks
-  parse_block_html: true  # Allow block-level HTML, including <pre>
-  html_to_native: false
+  #highlighter: rouge
+  #parse_block_html: true
+  #parse_span_html: true
+  #hard_wrap: false
+  #parse_block_html: true
+  #html_to_native: false
