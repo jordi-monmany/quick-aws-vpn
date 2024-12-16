@@ -40,13 +40,13 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
    Clone the repository to your local machine:
 
-   ```bash
+   ```code
    git clone https://github.com/jordi-monmany/quick-aws-vpn.git
    ```
 
 2. **Navigate to the Directory**
 
-   ```bash
+   ```code
    cd quick-aws-vpn
    ```
 
@@ -56,32 +56,32 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 4. **Make the Script Executable**
 
-   ```bash
+   ```code
    chmod u+x quick-aws-vpn.sh
    ```
 
 ## Usage
 
-```bash
+```code
 ./quick-aws-vpn.sh [options] <action>
 ```
 
 ### Options
 
-| Option | Description |
-|--------|-------------|
+| <pre><nobr>Option Syntax</nobr></pre> | Description |
+|---------------------------------------|-------------|
 | `-h` | Show help message. |
 | `-v` | Increment verbosity level; one level for each -v present in the arguments; can be used up to three times (`-vvv`). |
 | `-q` | Suppress non-essential output. |
 | `-f` | Skip all safety confirmation checks and automatically answer yes to all questions. |
-| <nobr>`-d VALUE`</nobr> | Specify working directory (default: current directory). |
-| <nobr>`-p VALUE`</nobr> | Specify PKI directory where sensitive cryptographic authentication files (`root-ca.pem`, `vpn-server.key`, `vpn-server.crt`, `vpn-client.key`, and `vpn-client.crt`) will be picked from or automatically created if missing (default: `<working directory>/pki`). |
-| <nobr>`-r VALUE`</nobr> | Specify AWS region. |
+| `-d VALUE` | Specify working directory (default: current directory). |
+| `-p VALUE` | Specify PKI directory where sensitive cryptographic authentication files (`root-ca.pem`, `vpn-server.key`, `vpn-server.crt`, `vpn-client.key`, and `vpn-client.crt`) will be picked from or automatically created if missing (default: `<working directory>/pki`). |
+| `-r VALUE` | Specify AWS region. |
 
 ### Actions
 
-| Action | Description |
-|--------|-------------|
+| <pre><nobr>Action Syntax</nobr></pre> | Description |
+|---------------------------------------|-------------|
 | `create` | Create a new AWS VPN, including all necessary remote resources (VPCs, subnets, gateways, PKI files). |
 | `install` | Install OpenVPN configuration and authentication files for the current VPN to `/etc/openvpn/client/`. |
 | `terminate` | Terminate all AWS resources associated with the persisted VPN remotely. |
@@ -92,13 +92,13 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 | `sync` | Overwrite the local properties for all tracked AWS resources associated to the persisted VPN with their remote values. |
 | `remote-resources` | List remote search results for the main AWS resources associated with the persisted VPN. |
 | `region-remote-resources` | List remote search results for the main AWS resources created by this program in the selected region. |
-| `trace-region-remote-resources` | List remote search results for the main AWS resources created by this program in the selected region with their tagging information. |
+| <nobr>`trace-region-remote-resources`</nobr> | List remote search results for the main AWS resources created by this program in the selected region with their tagging information. |
 
 ### Examples
 
 - **Create a New VPN**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh create
   ```
 
@@ -106,7 +106,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Create a New VPN on a specific region**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh -r us-east-1 create
   ```
 
@@ -114,7 +114,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Install VPN Client Files**
 
-  ```bash
+  ```code
   sudo ./quick-aws-vpn.sh install
   ```
 
@@ -122,7 +122,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Display VPN Information**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh info
   ```
 
@@ -130,7 +130,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Show Operation History**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh history
   ```
 
@@ -138,7 +138,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **List Remote AWS Resources**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh remote-resources
   ```
 
@@ -146,7 +146,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Terminate the VPN**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh terminate
   ```
 
@@ -154,7 +154,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **Purge Local Files**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh purge
   ```
 
@@ -162,7 +162,7 @@ This program is in an **alpha version**. It is incomplete and may contain bugs. 
 
 - **List Remote AWS Resources in the specified region**
 
-  ```bash
+  ```code
   ./quick-aws-vpn.sh -r us-east-1 region-remote-resources
   ```
 
